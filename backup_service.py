@@ -20,7 +20,7 @@ class MyHandler(PatternMatchingEventHandler):
 if __name__ == '__main__':
     args = sys.argv[1:]
     observer = Observer()
-    observer.schedule(MyHandler(), path=args[0] if args else '.')
+    observer.schedule(MyHandler(), path=args[0] if args else '.', recursive=True)
     observer.start()
     
     try:
