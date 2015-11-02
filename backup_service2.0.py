@@ -6,8 +6,8 @@ from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 
 #place the directory of your google drive and one drive here
-google_drive="/Users/robertschmicker/Google Drive/College/Sophmore Year/First Semester"
-one_drive="/Users/robertschmicker/OneDrive/College/Sophmore Year/First Semester"
+google_drive=""
+one_drive=""
 
 class MyHandler(PatternMatchingEventHandler):
     def process(self, event):
